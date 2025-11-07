@@ -46,7 +46,6 @@ https://vernanbackend.ezlab.in/api/contact-us/
 
 Content-Type: application/json
 
-
 **Request Body Example:**
 ```json
 {
@@ -55,9 +54,10 @@ Content-Type: application/json
   "phone": "65259165561",
   "message": "hello"
 }
+```
 
 **Successful Response (201 Created):**
-
+```json
 {
   "message": "Contact request submitted and email sent successfully",
   "data": {
@@ -70,6 +70,8 @@ Content-Type: application/json
     "updated_at": "2025-11-07T08:06:39.591411Z"
   }
 }
+```
+
 
 ## Postman Collection 
 
