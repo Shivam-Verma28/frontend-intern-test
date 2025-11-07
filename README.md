@@ -56,7 +56,7 @@ Content-Type: application/json
   "message": "hello"
 }
 
-Successful Response (201 Created):
+**Successful Response (201 Created):**
 
 {
   "message": "Contact request submitted and email sent successfully",
@@ -90,7 +90,7 @@ Contains:
 ### 🧾 Form UI  
 
 
-![Form UI](./Screenshots/formUI.png)
+![Form UI](.Screenshots/formUI.png)
 
 ---
 
