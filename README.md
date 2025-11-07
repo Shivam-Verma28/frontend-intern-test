@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# 🧠 Front-End Internship Test – React Form Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 👨‍💻 Developer
+**Name:** Shivam Verma  
+**Task:** Front-End Internship Test  
+**Date:** November 2025  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Project Overview
 
-### `npm start`
+This is a **single-page React application** created as part of the Front-End Internship Test.  
+The application includes a **responsive Contact Form** that integrates with the provided API endpoint to submit form data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧩 Tech Stack
 
-### `npm test`
+- **React.js** (v19.2.0)
+- **HTML5 / CSS3**
+- **JavaScript (ES6+)**
+- **Postman** for API testing
+- **Node.js + npm**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🎨 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+✅ Responsive and clean UI  
+✅ Yellow & Dark Brown theme  
+✅ Real-time form validation  
+✅ Email format validation  
+✅ Prevents empty form submission  
+✅ API integration with backend  
+✅ Displays success and error messages dynamically  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ API Integration
 
-### `npm run eject`
+**Base URL:**
+https://vernanbackend.ezlab.in/api/contact-us/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Method:** `POST`  
+**Headers:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Content-Type: application/json
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Request Body Example:**
+```json
+{
+  "name": "Shivam Verma",
+  "email": "shivamverma0328@gmail.com",
+  "phone": "65259165561",
+  "message": "hello"
+}
 
-## Learn More
+Successful Response (201 Created):
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+{
+  "message": "Contact request submitted and email sent successfully",
+  "data": {
+    "id": 1004,
+    "name": "Shivam Verma",
+    "email": "shivamverma0328@gmail.com",
+    "phone": "65259165561",
+    "message": "hello",
+    "created_at": "2025-11-07T08:06:39.591394Z",
+    "updated_at": "2025-11-07T08:06:39.591411Z"
+  }
+}
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Postman Collection 
 
-### Code Splitting
+A Postman dump is included in this repository:
+📁 postman_collection.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contains:
 
-### Analyzing the Bundle Size
+✅ Valid request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+⚠️ Missing field (email)
 
-### Making a Progressive Web App
+❌ Empty body (returns validation errors)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## 📸 Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 🧾 Form UI  
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Form UI](./Screenshots/formUI.png)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### ⚠️ Required Field Validation  
+
+
+![Required Field Validation](./Screenshots/error.png)
+
+---
+
+### ✅ Successful Submission  
+
+![Form Success](./Screenshots/submitted.png)
+
+---
+
+### 🧪 Postman Response  
+
+
+![Postman Response](./Screenshots/postman.png)
+
+
+
+

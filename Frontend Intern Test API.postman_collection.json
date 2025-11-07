@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "c2af0afe-d545-459c-9166-deff81c0da61",
+		"name": "Frontend Intern Test API",
+		"description": "**Contains the API requests used for form submission testing for the Front-End Internship project.**",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46095455",
+		"_collection_link": "https://shivamverma-8433717.postman.co/workspace/bf4a8ecd-e361-4093-8942-6afaf35eb1bb/collection/46095455-c2af0afe-d545-459c-9166-deff81c0da61?action=share&source=collection_link&creator=46095455"
+	},
+	"item": [
+		{
+			"name": "POST – Successful Form Submission (201 Created)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Shivam Verma\",\r\n  \"email\": \"shivamverma0328@gmail.com\",\r\n  \"phone\": \"65259165561\",\r\n  \"message\": \"hello\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+					"protocol": "https",
+					"host": [
+						"vernanbackend",
+						"ezlab",
+						"in"
+					],
+					"path": [
+						"api",
+						"contact-us",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST – Missing Email Field (Validation Error)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Shivam Verma\",\r\n  \r\n  \"phone\": \"65259165561\",\r\n  \"message\": \"hello\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+					"protocol": "https",
+					"host": [
+						"vernanbackend",
+						"ezlab",
+						"in"
+					],
+					"path": [
+						"api",
+						"contact-us",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST – Empty Form Submission - All Fields Missing",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+					"protocol": "https",
+					"host": [
+						"vernanbackend",
+						"ezlab",
+						"in"
+					],
+					"path": [
+						"api",
+						"contact-us",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

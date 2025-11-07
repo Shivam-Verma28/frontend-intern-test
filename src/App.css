@@ -1,38 +1,126 @@
-.App {
+
+body {
+  background: linear-gradient(135deg, #3E2723, #5D4037);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #3E2723;
+}
+
+.form-container {
+  max-width: 460px;
+  margin: 80px auto;
+  padding: 30px 28px;
+  background: #fffdf6;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(62, 39, 35, 0.25);
+  transition: all 0.3s ease;
+}
+
+.form-container:hover {
+  box-shadow: 0 15px 30px rgba(62, 39, 35, 0.3);
+}
+
+
+h2 {
   text-align: center;
+  color: #3E2723;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+  font-size: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #FFD700;
+  margin: 8px auto 0;
+  border-radius: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border: 1.8px solid #d4af37;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff9e6;
+  transition: all 0.25s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #3E2723;
+  box-shadow: 0 0 6px rgba(62, 39, 35, 0.3);
+  background-color: #fffef7;
+}
+
+form textarea {
+  resize: none;
+  height: 90px;
+}
+
+button {
+  background-color: #3E2723;
+  color: #FFD700;
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #FFD700;
+  color: #3E2723;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(62, 39, 35, 0.25);
+}
+
+.status {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 18px;
+  font-size: 15px;
+}
+
+.status.success {
+  color: #2e7d32;
+  background: #e8f5e9;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.status.error {
+  color: #c62828;
+  background: #ffebee;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+@media (max-width: 720px) {
+  .form-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 22px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h2 {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    font-size: 15px;
   }
 }
