@@ -7,6 +7,11 @@
 
 ---
 
+📦 **Postman Collection File:** `Frontend Intern Test API.postman_collection.json`  
+This file contains all API test cases used for verifying valid requests, missing fields, and empty form submissions.
+
+---
+
 ## 🚀 Project Overview
 
 This is a **single-page React application** created as part of the Front-End Internship Test.  
